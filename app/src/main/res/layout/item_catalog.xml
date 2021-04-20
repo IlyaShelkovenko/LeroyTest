@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/item_card_catalog_size"
+    android:layout_height="@dimen/item_card_catalog_size"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/rounded_card">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_background_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            tools:text="Каталог"
+            android:layout_margin="@dimen/margin_normal"
+            android:textSize="@dimen/item_card_catalog_text_size"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

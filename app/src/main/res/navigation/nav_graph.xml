@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home_dest">
+
+    <fragment
+        android:id="@+id/home_dest"
+        android:name="com.gmail.hostov47.leroytest.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/profile_dest"
+        android:name="com.gmail.hostov47.leroytest.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/my_list_dest"
+        android:name="com.gmail.hostov47.leroytest.ui.mylist.MyListFragment"
+        android:label="fragment_my_list"
+        tools:layout="@layout/fragment_my_list" />
+    <fragment
+        android:id="@+id/shopping_cart_dest"
+        android:name="com.gmail.hostov47.leroytest.ui.shoppingcart.ShoppingCartFragment"
+        android:label="fragment_shopping_cart"
+        tools:layout="@layout/fragment_shopping_cart" />
+    <fragment
+        android:id="@+id/shops_dest"
+        android:name="com.gmail.hostov47.leroytest.ui.shops.ShopsFragment"
+        android:label="fragment_shops"
+        tools:layout="@layout/fragment_shops" />
+</navigation>

@@ -1,0 +1,21 @@
+/**
+ * Created by Ilia Shelkovenko on 21.04.2021.
+ */
+
+package com.gmail.hostov47.leroytest.ui.home
+
+import android.graphics.Rect
+import android.view.View
+import androidx.recyclerview.widget.RecyclerView
+
+class SpacingItemDecoration(private val space: Int) : RecyclerView.ItemDecoration() {
+    override fun getItemOffsets(
+        outRect: Rect,
+        view: View,
+        parent: RecyclerView,
+        state: RecyclerView.State
+    ) {
+        outRect.right = space;
+        outRect.bottom = space;
+    }
+}
