@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_size"
+        android:background="?attr/colorSecondary"
+        android:fitsSystemWindows="true"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="?attr/actionBarSize"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:titleEnabled="false">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:elevation="0dp"
+                app:layout_collapseMode="pin"
+                app:title="@string/search_hint"
+                app:titleTextColor="@color/dark_gray">
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_search_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/search_toolbar"
+                    android:layout_alignStart="@id/search_toolbar"
+                    android:text="@string/main_search_title"
+                    android:textColor="?attr/colorOnSecondary"
+                    android:textSize="@dimen/main_title_size"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/search_toolbar"
+                    app:layout_constraintStart_toStartOf="@+id/search_toolbar" />
+
+                <com.gmail.hostov47.leroytest.ui.custom.SearchBar
+                    android:id="@+id/search_toolbar"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/search_bar_height"
+                    android:layout_marginStart="@dimen/margin_normal"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_qrcode"
+                    app:layout_constraintStart_toStartOf="parent" />
+                <!--app:hint="@string/search_hint"-->
+
+                <ImageButton
+                    android:id="@+id/btn_qrcode"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_marginEnd="@dimen/margin_normal"
+                    android:background="@drawable/btn_square_background"
+                    android:src="@drawable/ic_barcode"
+                    app:layout_constraintBottom_toBottomOf="@+id/search_toolbar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/search_toolbar" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</merge>

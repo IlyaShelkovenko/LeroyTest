@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/search_container"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:background="@drawable/search_background">
+
+        <EditText
+            android:id="@+id/search_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/search_background"
+            android:imeOptions="actionSearch"
+            android:inputType="textShortMessage"
+            android:labelFor="@+id/search"
+            android:maxLines="1"
+            android:paddingStart="@dimen/margin_small"
+            android:paddingEnd="@dimen/margin_small"
+            android:singleLine="true"
+            android:textColorHint="@color/dark_gray"
+            android:textSize="14sp"
+            tools:hint="@string/search_hint" />
+
+        <ImageButton
+            android:layout_width="@dimen/search_btn_width"
+            android:layout_height="@dimen/search_btn_height"
+            android:background="@drawable/btn_search_background"
+            android:src="@drawable/ic_search"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_small"/>
+
+        <ImageView
+            android:id="@+id/delete_text_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_normal"
+            android:contentDescription="@string/close"
+            android:src="@drawable/ic_cancel"
+            tools:visibility="visible"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+</FrameLayout>

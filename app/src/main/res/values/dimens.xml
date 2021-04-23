@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="item_card_catalog_size">120dp</dimen>
+    <dimen name="item_card_catalog_width">120dp</dimen>
     <dimen name="margin_normal">16dp</dimen>
+    <dimen name="margin_medium">24dp</dimen>
     <dimen name="item_card_catalog_text_size">16sp</dimen>
     <dimen name="margin_large">32dp</dimen>
+    <dimen name="card_corner_radius">6dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_huge">48dp</dimen>
+    <dimen name="min_height">90dp</dimen>
+    <dimen name="main_title_size">32sp</dimen>
+    <dimen name="appbar_size">170dp</dimen>
+    <dimen name="search_bar_height">56dp</dimen>
+    <dimen name="search_btn_width">36dp</dimen>
+    <dimen name="search_btn_height">28dp</dimen>
+    <dimen name="item_card_catalog_height">210dp</dimen>
 </resources>
