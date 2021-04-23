@@ -59,9 +59,6 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         )
         rv_products.adapter = productAdapter.apply { addAll(productList) }
 
-        refresh.setOnRefreshListener {
-            refresh.isRefreshing = false
-        }
     }
 
     private fun initAppbar(view: View) {
@@ -82,7 +79,6 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             }
         })
     }
-
 
     private fun initRecyclerView() {
         val spacing = 50
